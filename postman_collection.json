@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "458ed77a-96b2-4ac7-bad9-ed0759406b0e",
+		"name": "EZ_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40330672"
+	},
+	"item": [
+		{
+			"name": "Opsuser",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8000/ops/login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzMzOTQ2NTIxfQ.udUhrXiuCdC4_0HvIgb-_RKq4FYLZUnklGEVt0vD0K4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1efb7f60-2374-4870-9540-d0de5db847dc"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/ops/upload",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"ops",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000/ops/upload",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzMzOTQ2NTIxfQ.udUhrXiuCdC4_0HvIgb-_RKq4FYLZUnklGEVt0vD0K4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1efb7f60-2374-4870-9540-d0de5db847dc"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/ops/upload",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"ops",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clientuser",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8000/client/download-file/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzMzOTQ3NDA3fQ.RGxAUZQmwAHE6DPCaz-DChLg4ZoVLessHDGu8u-o3KU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "clientuser",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "clientpassword",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/client/download-file/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"client",
+								"download-file",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000/client/secure-download/eyJmaWxlX2lkIjoxLCJ1c2VyX2lkIjoyfQ.Z1npwg.R_Tf1T8HuJlwtDGwmf48Qa6l5jo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzMzOTQ3NDA3fQ.RGxAUZQmwAHE6DPCaz-DChLg4ZoVLessHDGu8u-o3KU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/client/secure-download/eyJmaWxlX2lkIjoxLCJ1c2VyX2lkIjoyfQ.Z1npwg.R_Tf1T8HuJlwtDGwmf48Qa6l5jo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"client",
+								"secure-download",
+								"eyJmaWxlX2lkIjoxLCJ1c2VyX2lkIjoyfQ.Z1npwg.R_Tf1T8HuJlwtDGwmf48Qa6l5jo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
